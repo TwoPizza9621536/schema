@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://twopizza9621536.github.io/schema/json/videolist.json",
+  "title": "Video List",
+  "description": "A listing of videos from a source",
+  "type": "object",
+  "properties": {
+    "Videos": {
+      "description": "List of videos titles and ids",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Title": {
+            "description": "The title of the video",
+            "type": "string"
+          },
+          "Id": {
+            "description": "The id of the video",
+            "type": "string"
+          }
+        },
+        "required": ["Title", "Id"]
+      },
+      "minItems": 1,
+      "uniqueItem": true
+    }
+  },
+  "required": ["Videos"]
+}
