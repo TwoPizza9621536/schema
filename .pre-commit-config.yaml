@@ -6,3 +6,4 @@ repos:
     -   id: mixed-line-ending
     -   id: trailing-whitespace
     -   id: pretty-format-json
+    arts: [--autofix]
