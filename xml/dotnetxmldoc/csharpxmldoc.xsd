@@ -1,8 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<!--Start of SPDX identifier expressions
-	SPDX-FileCopyrightText: 2022 Samuel Wu
-	SPDX-License-Identifier: CC0-1.0
-	End of SPDX identifier expressions-->
+<!--
+Start of SPDX identifier expressions
+SPDX-FileCopyrightText: 2022 Samuel Wu
+SPDX-License-Identifier: CC0-1.0
+End of SPDX identifier expressions
+-->
 <xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://twopizza9621536.github.io/schema/xml/dotnetxmldoc" targetNamespace="http://twopizza9621536.github.io/schema/xml/dotnetxmldoc">
 	<xs:element name="Namespace">
 		<xs:complexType>
