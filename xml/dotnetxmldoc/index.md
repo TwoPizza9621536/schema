@@ -1,4 +1,4 @@
-# Dotnet XML Documentation Schema
+# .NET XML Documentation Comments Schema
 
 ## Introduction
 
@@ -9,10 +9,17 @@ neat way to organize XML tags.
 
 ## References
 
-- [C# XML Documentation comments][1]
+- [C# XML documentation comments][1]
 - [Visual Basic .NET XML documentation comments][2]
 - [F# XML documentation comments][3]
 
 [1]: <https://docs.microsoft.com/dotnet/csharp/language-reference/xmldoc>
-[2]: <https://docs.microsoft.com/dotnet/visual-basic/programming-guide/program-structure/documenting-your-code-with-xml>
+[2]: <https://docs.microsoft.com/dotnet/visual-basic/language-reference/xmldoc/>
 [3]: <https://docs.microsoft.com/dotnet/fsharp/language-reference/xml-documentation>
+
+## License
+
+```text
+SPDX-FileCopyrightText: 2021-2022 Samuel Wu
+SPDX-License-Identifier: CC0-1.0
+```
