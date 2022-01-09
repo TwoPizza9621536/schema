@@ -53,7 +53,7 @@
 												</xs:sequence>
 											</xs:complexType>
 										</xs:element>
-										<xs:element name="returns">
+										<xs:element minOccurs="0" maxOccurs="1" name="returns">
 											<xs:complexType mixed="true">
 												<xs:sequence minOccurs="0">
 													<xs:element name="see">
