@@ -18,5 +18,6 @@ Available XML schemas:
 
 ```text
 SPDX-FileCopyrightText: 2021-2022 Samuel Wu
+
 SPDX-License-Identifier: CC0-1.0
 ```
