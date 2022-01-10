@@ -5,7 +5,7 @@ SPDX-FileCopyrightText: 2022 Samuel Wu
 SPDX-License-Identifier: CC0-1.0
 End of SPDX identifier expressions
 -->
-<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://twopizza9621536.github.io/schema/xml/dotnetxmldoc" targetNamespace="http://twopizza9621536.github.io/schema/xml/dotnetxmldoc">
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://twopizza9621536.github.io/schema/xml/csharpxmldoc" targetNamespace="http://twopizza9621536.github.io/schema/xml/csharpxmldoc">
 	<xs:element name="Namespace">
 		<xs:complexType>
 			<xs:sequence>
@@ -15,7 +15,7 @@ End of SPDX identifier expressions
 							<xs:element name="Member">
 								<xs:complexType>
 									<xs:sequence>
-										<xs:element name="summary" type="xs:string"/>
+										<xs:element name="summary" type="xs:string" />
 									</xs:sequence>
 								</xs:complexType>
 							</xs:element>
@@ -29,7 +29,7 @@ End of SPDX identifier expressions
 														<xs:complexType>
 															<xs:simpleContent>
 																<xs:extension base="xs:string">
-																	<xs:attribute name="cref" type="xs:string" use="required"/>
+																	<xs:attribute name="cref" type="xs:string" use="required" />
 																</xs:extension>
 															</xs:simpleContent>
 														</xs:complexType>
@@ -37,8 +37,9 @@ End of SPDX identifier expressions
 												</xs:sequence>
 											</xs:complexType>
 										</xs:element>
+										<xs:element minOccurs="0" name="value" />
 									</xs:sequence>
-									<xs:attribute name="name" type="xs:string" use="required"/>
+									<xs:attribute name="name" type="xs:string" use="required" />
 								</xs:complexType>
 							</xs:element>
 							<xs:element minOccurs="0" maxOccurs="unbounded" name="Method">
@@ -51,11 +52,18 @@ End of SPDX identifier expressions
 														<xs:complexType>
 															<xs:simpleContent>
 																<xs:extension base="xs:string">
-																	<xs:attribute name="cref" type="xs:string" use="required"/>
+																	<xs:attribute name="cref" type="xs:string" use="required" />
 																</xs:extension>
 															</xs:simpleContent>
 														</xs:complexType>
 													</xs:element>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+										<xs:element minOccurs="0" maxOccurs="unbounded" name="param">
+											<xs:complexType>
+												<xs:sequence minOccurs="0">
+													<xs:element name="remarks" />
 												</xs:sequence>
 											</xs:complexType>
 										</xs:element>
@@ -66,7 +74,7 @@ End of SPDX identifier expressions
 														<xs:complexType>
 															<xs:simpleContent>
 																<xs:extension base="xs:string">
-																	<xs:attribute name="name" type="xs:string" use="required"/>
+																	<xs:attribute name="name" type="xs:string" use="required" />
 																</xs:extension>
 															</xs:simpleContent>
 														</xs:complexType>
@@ -76,20 +84,20 @@ End of SPDX identifier expressions
 										</xs:element>
 										<xs:element minOccurs="0" name="seealso">
 											<xs:complexType>
-												<xs:attribute name="cref" type="xs:string" use="required"/>
+												<xs:attribute name="cref" type="xs:string" use="required" />
 											</xs:complexType>
 										</xs:element>
 										<xs:element minOccurs="0" name="exception">
 											<xs:complexType>
-												<xs:attribute name="cref" type="xs:string" use="required"/>
+												<xs:attribute name="cref" type="xs:string" use="required" />
 											</xs:complexType>
 										</xs:element>
 									</xs:sequence>
-									<xs:attribute name="name" type="xs:string" use="required"/>
+									<xs:attribute name="name" type="xs:string" use="required" />
 								</xs:complexType>
 							</xs:element>
 						</xs:sequence>
-						<xs:attribute name="name" type="xs:string" use="optional"/>
+						<xs:attribute name="name" type="xs:string" use="optional" />
 					</xs:complexType>
 				</xs:element>
 			</xs:sequence>

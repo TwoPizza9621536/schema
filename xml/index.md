@@ -12,7 +12,7 @@ You should use the following to use the schema:
 
 Available XML schemas:
 
-- [.NET XML Documentation Comments Schema](dotnetxmldoc/index.md)
+- [C# Documentation Comments Schema](csharpxmldoc/index.md)
 
 ## License
 
