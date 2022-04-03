@@ -1,6 +1,5 @@
 {
   "$id": "https://twopizza9621536.github.io/schema/json/videolist.json",
-  "$schema": "https://json-schema.org/draft-07/schema",
   "description": "A listing of videos from a source",
   "properties": {
     "PlaylistId": {
