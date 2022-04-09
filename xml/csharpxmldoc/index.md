@@ -6,7 +6,7 @@ This schema defines how XML comments should organized according to the program
 structure of the language C#. This is not a actual specification nor a actual
 standard, this for people who want to have a neat way to organize XML tags.
 
-In pratice it should work and has worked. In realiy does not work well in after
+In practice it should work and has worked. In reality does not work well in after
 a cleanup of the project or solution.
 
 ## References

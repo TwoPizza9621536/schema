@@ -1,6 +1,6 @@
 {
-  "$id": "https://twopizza9621536.github.io/schema/json/videolist.json",
-  "description": "A listing of videos from a source",
+  "$id": "https://twopizza9621536.github.io/schema/json/playlist.json",
+  "description": "A playlist of videos from any source with an title and id.",
   "properties": {
     "PlaylistId": {
       "description": "The id of the playlist that the videos belongs to",
@@ -37,6 +37,6 @@
   "required": [
     "Videos"
   ],
-  "title": "VideoList",
+  "title": "Playlist",
   "type": "object"
 }
