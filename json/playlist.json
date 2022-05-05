@@ -2,30 +2,34 @@
   "$id": "https://twopizza9621536.github.io/schema/json/playlist.json",
   "description": "A playlist of videos from any source with an title and id.",
   "properties": {
-    "PlaylistId": {
+    "playlistId": {
       "description": "The id of the playlist that the videos belongs to",
+      "name": "PlaylistId",
       "type": "string"
     },
-    "PlaylistName": {
+    "playlistName": {
       "description": "The name of the playlist that the videos belongs to",
+      "name": "PlaylistName",
       "type": "string"
     },
-    "Videos": {
+    "videos": {
       "description": "List of video titles and ids",
       "items": {
         "properties": {
-          "Id": {
+          "id": {
             "description": "The id of the video",
+            "name": "Id",
             "type": "string"
           },
-          "Title": {
+          "title": {
             "description": "The title of the video",
+            "name": "Title",
             "type": "string"
           }
         },
         "required": [
-          "Title",
-          "Id"
+          "title",
+          "id"
         ],
         "type": "object"
       },
@@ -35,7 +39,7 @@
     }
   },
   "required": [
-    "Videos"
+    "videos"
   ],
   "title": "Playlist",
   "type": "object"
